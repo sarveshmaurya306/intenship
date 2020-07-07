@@ -3,8 +3,6 @@ import NavBar from './NavBar'
 import Footer from './Footer.jsx'
 
 
-// https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails%2Csnippet&maxResults=10&playlistId=PLQTrsL3aYSRHBtn_RIRu-5V1vydSgcUAm&key=AIzaSyCoa3yhaiNPBbfZidp_kEm4fWg3wR3w84w
-
 
 export default function Courses(params) {
 	const [course, setCourse] = React.useState([])
