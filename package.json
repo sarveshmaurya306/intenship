@@ -2,7 +2,7 @@
   "name": "my-app2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sarveshmaurya306.github.io/intenship/",
+  "homepage": "https://sarveshmaurya306.github.io/AG/",
   "dependencies": {
     "@material-ui/core": "^4.10.2",
     "@testing-library/jest-dom": "^4.2.4",
