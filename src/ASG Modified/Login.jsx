@@ -6,7 +6,16 @@ import Footer from './Footer'
 export default function Login(params) {
 	return (<>
 		<NavBar />
-		<div style={{ marginTop: '10%' }} className="container">
+		<LoginForm/>
+		<hr/>
+		<Footer/>
+	</>)
+};
+
+
+function LoginForm(){
+	return(<>
+	<div style={{ marginTop: '10%' }} className="container">
 			<div className="row d-flex text-center align-items-center">
 				<div className="col-12 col-md-6">
 					<div className="m-5">
@@ -39,7 +48,5 @@ export default function Login(params) {
 				</div>
 			</div>
 		</div>
-		<hr/>
-		<Footer/>
 	</>)
-};
+}

@@ -35,10 +35,10 @@ export default function ContactUs() {
 			<div className="container"><hr />
 				<div className="row d-flex justify-content-around" style={{marginTop:"10%"}}>
 					<div className="col-12 col-md-6 order-md-1 order-2">
-						<h2 className="h2 mt-5 mt-md-0">Contact Us</h2>
-						<h3>Address: </h3><p className="text_color_according">New Delhi</p>
-						<h3>Email: </h3><p  className="text_color_according">support@asgtechsolutions.com</p>
-						<h3>Phone: </h3><p className="text_color_according">9999999999</p>
+						<h2 className="mt-5 mt-md-0">Contact Us</h2>
+						<h4>Address: </h4><p className="text_color_according px-4" style={{textDecoration:"underline"}}>New Delhi</p>
+						<h4>Email: </h4><p  className="text_color_according px-4" style={{textDecoration:"underline"}}>support@asgtechsolutions.com</p>
+						<h4>Phone: </h4><p className="text_color_according px-4" style={{textDecoration:"underline"}}>9999999999</p>
 					</div>
 					<div className="col-12 col-md-6 order-md-2 order-1 mt-2">
 						<img src={ContactSVG} className="img-fluid" width="600" height="600"/>
@@ -49,21 +49,24 @@ export default function ContactUs() {
 				<form id="myform" onSubmit={() => false} className="contact_form_class">
 					<div className="row">
 						<div className="col-12 col-md-6">
-							<div className="col-12">
-								<label id="name">Name: </label>
-								<input type="text" className="form-control" name="name" placeholder="Name" onChange={Message} /><br />
+							<div className="col-12 p-4">
+								<span><i className="fa fa-user "></i></span>
+								<input type="text" className="form_control" name="name" placeholder="Name" onChange={Message} /><br />
 							</div>
-							<div className="col-12">
-								<label id="email">Email:</label>
-								<input type="email" name="email" className="form-control" onChange={Message} placeholder="Email@gmail.com" /><br />
+							<div className="col-12 p-4">
+								<span><i className="fa fa-envelope "></i></span>
+								<input type="email" name="email" className="form_control" onChange={Message} placeholder="Email@gmail.com" /><br />
 							</div>
-							<div className="col-12">
-								<label id="phone">Phone:</label>
-								<input type="number" className="form-control " name="number" placeholder="Your  Number" onChange={Message} /><br />
+							<div className="col-12 p-4">
+								<span><i className="fa fa-mobile fa-2x"></i></span>
+								<input type="number" className="form_control " name="number" placeholder="Your  Number" onChange={Message} /><br />
 							</div>
 						</div>
-						<div className="col-12 col-md-6 my-3">
-							<textarea name="query" id="messageField" cols="30" rows="10" className="form-control" placeholder="write your message here" onChange={Message} ></textarea>
+						<div className="col-12 col-md-6 py-4 ">
+							<div className="container d-flex justify-content-around">
+							<i className="fa fa-comments flex-start "></i>
+							<textarea name="query" id="messageField" cols="30" rows="9" className="form_control" placeholder="write your message here" onChange={Message} ></textarea>
+							</div>
 						</div>
 					</div>
 					<br />

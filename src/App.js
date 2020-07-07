@@ -4,6 +4,7 @@ import ContactUs from './ASG Modified/ContactUs.jsx'
 import Login from './ASG Modified/Login.jsx'
 import About from './ASG Modified/About.jsx'
 import SignUp from './ASG Modified/SignUp.jsx'
+import Courses from './ASG Modified/Courses.jsx'
 import {
   Switch,
   Route
@@ -28,7 +29,9 @@ export default function App() {
       <Route exact path="/login/signup">
         <SignUp/>
       </Route>
-      
+      <Route exact path="/courses">
+        <Courses/>
+      </Route>
     </Switch>
   </div>
   );
