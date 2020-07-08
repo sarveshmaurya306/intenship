@@ -125,12 +125,14 @@ function FlashCards(props) {
 				</div>
 
 			</div>
-			<a className="float-left carousel-control-prev next_pre_btn_according" href="#CoursesControl" role="button" style={{position: "relative"}} data-slide="prev">
-				<span className="carousel-control-prev-icon text-primary"/>
+			<a className="float-left carousel-control-prev next_pre_btn_according" style={{borderRadius:238}}href="#CoursesControl" role="button" style={{position: "relative"}} data-slide="prev">
+				{/* <span className="carousel-control-prev-icon text-primary"/> */}
+				<i className="fa fa-angle-left fa-2x"></i>
 				<span className="sr-only">Previous</span>
 			</a>
-			<a className="float-right carousel-control-next next_pre_btn_according" href="#CoursesControl" style={{position: "relative"}} role="button" data-slide="next">
-				<span className="carousel-control-next-icon" aria-hidden="true" />
+			<a className="float-right carousel-control-next next_pre_btn_according" style={{borderRadius:238}}href="#CoursesControl" style={{position: "relative"}} role="button" data-slide="next">
+				{/* <span className="carousel-control-next-icon" aria-hidden="true" /> */}
+				<i className="fa fa-angle-right fa-2x"></i>
 				<span className="sr-only">Next</span>
 			</a>
 		</div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import web from './ASG_Correct_Logo-removebg-preview.png'
 import {NavLink} from 'react-router-dom'
+import BackToTopButton from './BackToTopButton'
+
 export default function NavBar(props) {
 	return(<div>
 	<nav className="navbar navbar-expand-lg navbar-light fixed-top mb-5 nav_beauty">
@@ -41,6 +43,6 @@ export default function NavBar(props) {
     </div>
   </div>
 </nav>
-
+  <BackToTopButton />
 	</div>)
 };

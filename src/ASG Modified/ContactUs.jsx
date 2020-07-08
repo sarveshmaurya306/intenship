@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com'
 import NavBar from './NavBar'
 import ContactSVG from './undraw_Letter_re_8m03.svg'
 import Footer from './Footer'
+
 export default function ContactUs() {
 	const [message, setMessage] = React.useState({ name: "", query: "", number: '', email: '' });
 	function Message(event) {

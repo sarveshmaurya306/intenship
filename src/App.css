@@ -12,8 +12,8 @@ nav ul li{
 }
 .button_hover{
   background-color: #fff;
-  padding: 10px;
   border:1px solid #0FAAE3;
+  padding: 10px;
   border-radius: 8px;
   transition: 0.3s;
   cursor: pointer;
@@ -23,13 +23,25 @@ nav ul li{
   background-color: #0FAAE3;
   color:#fff;
 }
+.button_hover_reverse{
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #0FAAE3;
+  color:#fff;
+}
+.button_hover_reverse:hover{
+  background-color: #fff;
+  border:1px solid #0FAAE3;
+  color:#000!important
+}
 a{
   text-decoration: none;
   color:black;
 }
 
 .currentPage{
-  /* filter:drop-shadow(1px 1px 2px black); */
   font-weight: bold;
   color: black;
   border-bottom: 3px solid #0FAAE3;
@@ -71,10 +83,3 @@ input,textarea{
   background-color:rgba(255, 255, 255, 0.637);
   backdrop-filter:blur(6px);
 }
-/* 
-@media screen and (max-width: 768px) {
-  .fa-sm-1x{
-    font-size: 16px;
-  }
-} */
-
