@@ -1,14 +1,11 @@
 import React from 'react'
 export default function Footer(params) {
 	return(<>
-	<footer className="page-footer font-small indigo">
-  {/* Footer Links */}
+	<footer className="page-footer font-small">
   <div className="container text-center text-md-left">
-    {/* Grid row */}
-    <div className="row">
-      {/* Grid column */}
-      <div className="col-md-3 mx-auto">
-        {/* Links */}
+    <div className="row d-flex justify-content-around">
+      
+      <div className="col-md-3 col-6">
         <h5 className="font-weight-bold text-uppercase mt-3 mb-4">About</h5>
         <ul className="list-unstyled">
           <li>
@@ -22,11 +19,8 @@ export default function Footer(params) {
           </li>
         </ul>
       </div>
-      {/* Grid column */}
-      <hr className="clearfix w-100 d-md-none" />
-      {/* Grid column */}
-      <div className="col-md-3 mx-auto">
-        {/* Links */}
+      
+      <div className="col-md-3 col-6">
         <h5 className="font-weight-bold text-uppercase mt-3 mb-4">Live Session</h5>
         <ul className="list-unstyled">
           <li>
@@ -43,11 +37,9 @@ export default function Footer(params) {
           </li>
         </ul>
       </div>
-      {/* Grid column */}
+      
       <hr className="clearfix w-100 d-md-none" />
-      {/* Grid column */}
-      <div className="col-md-3 mx-auto">
-        {/* Links */}
+      <div className="col-md-3 col-6">
         <h5 className="font-weight-bold text-uppercase mt-3 mb-4">Help &amp; Support</h5>
         <ul className="list-unstyled">
           <li>
@@ -61,39 +53,23 @@ export default function Footer(params) {
           </li>
         </ul>
       </div>
-      {/* Grid column */}
-      {/* Grid column */}
-      <hr className="clearfix w-100 d-md-none" />
-      {/* Grid column */}
-      <div className="col-md-2 col-lg-2 text-center mx-auto my-4">
-        {/* Social buttons */}
-        <h5 className="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-        {/* Facebook */}
-        <a type="button" className="btn-floating btn-fb">
-          <i className="fa fa-facebook fa-2x text-primary mx-3" />
+      
+      <div className="col-md-3 col-6">
+      <h5 className="font-weight-bold text-uppercase mt-3 mb-4">Follow Us</h5>
+        <a href="#">
+          <i className="fa fa-facebook fa-2x text-primary mr-3"></i>
         </a>
-        {/* Twitter */}
-        <a type="button" className="btn-floating btn-tw ">
-          <i className="fa fa-twitter fa-2x text-info mx-3" />
+        <a href="#">
+          <i className="fa fa-twitter fa-2x text-info mr-3"></i>
         </a>
-        {/* Google +*/}
-        <a type="button" className="btn-floating btn-gplus">
-          <i className="fa fa-google-plus fa-2x text-danger mx-3" />
-        </a>
-        {/* Dribbble */}
-        <a type="button" className="btn-floating btn-dribbble">
-          <i className="fa fa-youtube fa-2x text-danger mx-3" />
+        <a href="#">
+          <i className="fa fa-youtube fa-2x text-danger mr-3"></i>
         </a>
       </div>
-      {/* Grid column */}
     </div>
-    {/* Grid row */}
   </div>
-  {/* Footer Links */}
-  {/* Copyright */}
-  <div className="footer-copyright text-center py-3">© 2020 ASG Techsolutions.All Rights Reserved
+  <div className="footer-copyright text-center py-3">© 2020 ASG Techsolutions. All Rights Reserved
   </div>
-  {/* Copyright */}
 </footer>
 
 	</>)

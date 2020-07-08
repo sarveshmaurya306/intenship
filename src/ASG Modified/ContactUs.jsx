@@ -1,7 +1,7 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
 import NavBar from './NavBar'
-import ContactSVG from './undraw_contact_us_15o2.svg'
+import ContactSVG from './undraw_Letter_re_8m03.svg'
 import Footer from './Footer'
 export default function ContactUs() {
 	const [message, setMessage] = React.useState({ name: "", query: "", number: '', email: '' });
@@ -30,18 +30,26 @@ export default function ContactUs() {
 	return (
 		<>
 			<div className="mb-5">
-			<NavBar/>
+				<NavBar />
 			</div>
 			<div className="container"><hr />
-				<div className="row d-flex justify-content-around" style={{marginTop:"10%"}}>
-					<div className="col-12 col-md-6 order-md-1 order-2">
-						<h2 className="mt-5 mt-md-0">Contact Us</h2>
-						<h4>Address: </h4><p className="text_color_according px-4" style={{textDecoration:"underline"}}>New Delhi</p>
-						<h4>Email: </h4><p  className="text_color_according px-4" style={{textDecoration:"underline"}}>support@asgtechsolutions.com</p>
-						<h4>Phone: </h4><p className="text_color_according px-4" style={{textDecoration:"underline"}}>9999999999</p>
+				<div className="row d-flex justify-content-around" style={{ marginTop: "6%" }}>
+					<h2 className="mt-5 mt-md-0 text-center">Contact Us</h2><br/><br/><br/><br/>
+					<div className="col-12 col-md-6 order-md-1 order-2 d-flex flex-column justify-content-center contaier">
+
+						<span className="d-flex align-items-center"><i className="fa fa-address-book mr-3"></i><h4>Registered Address: </h4></span><p className="text_color_according px-5" style={{ textDecoration: "underline" }}>New Delhi</p>
+
+						<br />
+						<span className="d-flex align-items-center"><i className="fa fa-address-book mr-3"></i><h4>Correspondance Address: </h4></span><p className="text_color_according px-5" style={{ textDecoration: "underline" }}>New Delhi</p>
+
+						<br />
+						<span className="d-flex align-items-center"><i className="fa fa-envelope mr-3"></i><h4>Email: </h4></span><p className="text_color_according px-5" style={{ textDecoration: "underline" }}>support@asgtechsolutions.com</p>
+
+						<br />
+						<span className="d-flex align-items-center"><i className="fa fa-phone mr-3"></i><h4>Mobile: </h4></span><p className="text_color_according px-5" style={{ textDecoration: "underline" }}>999-999-9999</p>
 					</div>
-					<div className="col-12 col-md-6 order-md-2 order-1 mt-2">
-						<img src={ContactSVG} className="img-fluid" width="600" height="600"/>
+					<div className="container col-12 col-md-6 order-md-2 order-1 mt-2">
+						<img src={ContactSVG} className="img-fluid" width="400" height="400" />
 					</div>
 				</div>
 				<br />
@@ -64,8 +72,8 @@ export default function ContactUs() {
 						</div>
 						<div className="col-12 col-md-6 py-4 ">
 							<div className="container d-flex justify-content-around">
-							<i className="fa fa-comments flex-start "></i>
-							<textarea name="query" id="messageField" cols="30" rows="9" className="form_control" placeholder="write your message here" onChange={Message} ></textarea>
+								<i className="fa fa-comments flex-start "></i>
+								<textarea name="query" id="messageField" cols="30" rows="9" className="form_control" placeholder="write your message here" onChange={Message} ></textarea>
 							</div>
 						</div>
 					</div>
@@ -75,8 +83,8 @@ export default function ContactUs() {
 				<h4>plese check</h4>
 				{`name:	${message.name} phone: ${message.number} email: ${message.email}`}
 			</div>
-				<hr />
-			<Footer/>
+			<hr />
+			<Footer />
 
 		</>
 	)

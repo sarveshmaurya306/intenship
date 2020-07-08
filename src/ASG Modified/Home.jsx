@@ -5,6 +5,7 @@ import '../App.css'
 import Images from './img1.jpg'
 import Images2 from './img2.jpg'
 import Footer from './Footer'
+import {Link} from 'react-router-dom'
 export default function Home(params) {
 	return (<div>
 		<NavBar />
@@ -69,7 +70,7 @@ function Main() {
 					<h1>Welcome to </h1>
 					<h1 style={{ color: "#0FAAE3" }}>ASG Tech Solutions </h1>
 					<h2><strong>We Provide Our Best.</strong></h2>
-					<a className="my-3 button_hover" href="#">Register Here</a>
+					<Link className="my-3 button_hover" to="/login/signup">Register Here</Link>
 				</div>
 				<div className="col-lg-6 order-sm-1 order-md-2 d-flex align-items-center" >
 					<img src={web} id="side_img" className="justify-content-center align-items-center img-fluid" width="500" height="500" />
@@ -78,18 +79,17 @@ function Main() {
 		</div>
 	</div>)
 }
-var count=0;
-function Flashes(props) {
-	count++;
+
+function Flashes(props) {	
 	return (
 		<div>
-			<div className="mb-3 card" style={{ width: '18rem' }}>
+			<div className="mb-3 card" style={{ width: '16rem' }}>
 				<div className="row">
-					<img src={Images} className="card-img-top" alt="..." />
+					<img src={props.img} className="card-img-top" alt="..." />
 					<div className="card-body">
-						<h5 className="card-title">Card title{count}</h5>
-						<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" className="float-right btn button_hover">See More</a>
+						<h5 className="card-title">{props.index}.{props.title}</h5>
+						<p className="card-text text-center">{props.description}</p>
+						<a href={props.link} className="float-right btn button_hover" style={{marginRight:"20px"}}>Learn More</a>
 					</div>
 				</div>
 			</div>
@@ -99,34 +99,37 @@ function Flashes(props) {
 }
 
 function FlashCards(props) {
+
+	const [course, setCourse] = React.useState([])
+	React.useEffect(() => {
+		fetch("https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails%2Csnippet&maxResults=20&playlistId=PLQTrsL3aYSRHBtn_RIRu-5V1vydSgcUAm&key=AIzaSyCoa3yhaiNPBbfZidp_kEm4fWg3wR3w84w").then(res => res.json()).then(data => setCourse(data.items)).catch((err)=>console.log(err))
+	}, [])
+
+
 	return (<div>
 		<div id="CoursesControl" className="carousel slide" data-ride="carousel">
 			<div className="carousel-inner">
 				<div className="carousel-item active">
 
 					<div className="d-flex flex-wrap justify-content-around">
-						<Flashes />
-						<Flashes />
-						<Flashes />
-						<Flashes />
+						{course.slice(0,4).map((item,index)=>
+						<Flashes title="Cisco ASA Firewall | Hindi" img={item.snippet.thumbnails.medium.url} description={item.snippet.title} index={index+1} link={`https://www.youtube.com/watch?v=${item.snippet.resourceId.videoId}&list=PLQTrsL3aYSRHGM6WNPDQGEStzZFJU7ITG&index=2&t=0s`}/>)}
 					</div>
 
 				</div>
 				<div className="carousel-item">
 					<div className="d-flex flex-wrap justify-content-around">
-						<Flashes />
-						<Flashes />
-						<Flashes />
-						<Flashes />
+					{course.slice(4,8).map((item,index)=>
+						<Flashes title="Cisco ASA Firewall | Hindi" img={item.snippet.thumbnails.medium.url} index={index+5} description={item.snippet.title} link={`https://www.youtube.com/watch?v=${item.snippet.resourceId.videoId}&list=PLQTrsL3aYSRHGM6WNPDQGEStzZFJU7ITG&index=2&t=0s`}/>)}
 					</div>
 				</div>
 
 			</div>
-			<a className="float-left carousel-control-prev bg-dark" href="#CoursesControl" role="button" style={{position: "relative"}} data-slide="prev">
+			<a className="float-left carousel-control-prev next_pre_btn_according" href="#CoursesControl" role="button" style={{position: "relative"}} data-slide="prev">
 				<span className="carousel-control-prev-icon text-primary"/>
 				<span className="sr-only">Previous</span>
 			</a>
-			<a className="float-right carousel-control-next bg-dark" href="#CoursesControl" style={{position: "relative"}} role="button" data-slide="next">
+			<a className="float-right carousel-control-next next_pre_btn_according" href="#CoursesControl" style={{position: "relative"}} role="button" data-slide="next">
 				<span className="carousel-control-next-icon" aria-hidden="true" />
 				<span className="sr-only">Next</span>
 			</a>

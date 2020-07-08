@@ -43,6 +43,7 @@ a{
   padding: 10px;
   margin:0px 8px 0px 8px;
   width: 90%;
+  color:grey;
 }
 input:focus, textarea:focus, select:focus{
   outline: none;
@@ -50,14 +51,30 @@ input:focus, textarea:focus, select:focus{
 .card{
   transition: 0.4s;
 }
+input,textarea{
+  background: transparent;
+}
 .card:hover{
-  color:red;
+  color:#0FAAE3;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.473);
 }
 
+.next_pre_btn_according{
+  background-color: #0faae3b0;
+  transition: 0.4s;
+}
+.next_pre_btn_according:hover{
+  background-color: #0FAAE3;
+}
+
+.nav_beauty{
+  background-color:rgba(255, 255, 255, 0.637);
+  backdrop-filter:blur(6px);
+}
+/* 
 @media screen and (max-width: 768px) {
   .fa-sm-1x{
     font-size: 16px;
   }
-}
+} */
 

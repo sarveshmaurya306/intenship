@@ -3,7 +3,7 @@ import web from './ASG_Correct_Logo-removebg-preview.png'
 import {NavLink} from 'react-router-dom'
 export default function NavBar(props) {
 	return(<div>
-	<nav className="navbar navbar-expand-lg navbar-light fixed-top mb-5" style={{backgroundColor:"rgba(255, 255, 255, 0.637)",backdropFilter:" blur(5px)"}}>
+	<nav className="navbar navbar-expand-lg navbar-light fixed-top mb-5 nav_beauty">
   <div className="container-fluid">
   <img src={web} width="100" width="100" className="img-fluid" />
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@ export default function NavBar(props) {
           <NavLink className="nav-link "  exact aria-current="page" activeClassName="currentPage" to="/about">About Us</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" aria-current="page" activeClassName="currentPage" to='/login'><strong style={{color:"0FAAE3"}}>In/Out</strong></NavLink>
+          <NavLink className="nav-link" aria-current="page" activeClassName="currentPage" to='/login'><span style={{color:"#0FAAE3",fontWeight:"bold"}}>Login</span></NavLink>
         </li>  
       </ul> 
     </div>
