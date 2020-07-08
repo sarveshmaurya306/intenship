@@ -2,11 +2,7 @@
   "name": "my-app2",
   "version": "0.1.0",
   "private": true,
-<<<<<<< HEAD
-  "homepage": "https://sarveshmaurya306.github.io/AG/",
-=======
   "homepage": "https://sarveshmaurya306.github.io/intenship/",
->>>>>>> eee16242c8cd1263fd11b27e7a0cbc16e14cf882
   "dependencies": {
     "@material-ui/core": "^4.10.2",
     "@testing-library/jest-dom": "^4.2.4",
@@ -25,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
