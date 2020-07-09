@@ -46,7 +46,7 @@ function LoginForm() {
 					</div>
 				</div>
 				<div className="col-12 col-md-6">
-					<img src={LoginImg} className="img-fluid" />
+					<img alt="error-loading" src={LoginImg} className="img-fluid" />
 				</div>
 			</div>
 		</div>

@@ -7,7 +7,7 @@ export default function NavBar(props) {
 	return(<div>
 	<nav className="navbar navbar-expand-lg navbar-light fixed-top mb-5 nav_beauty">
   <div className="container-fluid">
-  <img src={web} width="100" width="100" className="img-fluid" />
+  <img alt="error-loading" src={web} width="100" width="100" className="img-fluid" />
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>

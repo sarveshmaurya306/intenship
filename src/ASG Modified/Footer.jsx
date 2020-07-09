@@ -15,7 +15,7 @@ export default function Footer(params) {
             <a href="#!">Our Team</a>
           </li>
           <li>
-            <a href="#!">Our Partner</a>
+            <a href="#">Our Partner</a>
           </li>
         </ul>
       </div>

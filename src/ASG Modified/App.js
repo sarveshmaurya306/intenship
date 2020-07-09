@@ -1,10 +1,11 @@
 import React from 'react';
-import Home from './ASG Modified/Home.jsx'
-import ContactUs from './ASG Modified/ContactUs.jsx'
-import Login from './ASG Modified/Login.jsx'
-import About from './ASG Modified/About.jsx'
-import SignUp from './ASG Modified/SignUp.jsx'
-import Courses from './ASG Modified/Courses.jsx'
+import Home from './Home.jsx'
+import ContactUs from './ContactUs.jsx'
+import Login from './Login.jsx'
+import About from './About.jsx'
+import SignUp from './SignUp.jsx'
+import Courses from './Courses.jsx'
+import './App.css'
 import {
   Switch,
   Route

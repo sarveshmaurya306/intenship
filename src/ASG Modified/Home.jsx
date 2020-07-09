@@ -1,9 +1,9 @@
 import React from 'react'
 import NavBar from './NavBar';
 import web from './undraw_Hello_qnas.svg'
-import '../App.css'
-import Images from './img1.jpg'
-import Images2 from './img2.jpg'
+import './App.css'
+// import Images from './img1.jpg'
+// import Images2 from './img2.jpg'
 import Footer from './Footer'
 import {Link} from 'react-router-dom'
 export default function Home(params) {
@@ -23,44 +23,44 @@ export default function Home(params) {
 	</div>)
 };
 
-function Review() {
-	return (<div>
-		<div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-			<div className="carousel-inner">
-				<div className="carousel-item active">
-					<div className="row">
+// function Review() {
+// 	return (<div>
+// 		<div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+// 			<div className="carousel-inner">
+// 				<div className="carousel-item active">
+// 					<div className="row">
 
-						<img src={Images} className="d-block w-50" alt="error" />
-						<img src={Images2} className="d-block w-50" alt="error" />
-					</div>
-				</div>
-				<div className="carousel-item">
-					<div className="row">
+// 						<img alt="error-loading" src={Images} className="d-block w-50" alt="error" />
+// 						<img alt="error-loading" src={Images2} className="d-block w-50" alt="error" />
+// 					</div>
+// 				</div>
+// 				<div className="carousel-item">
+// 					<div className="row">
 
-						<img src={Images2} className="d-block w-50" alt="error" />
-						<img src={Images} className="d-block w-50" alt="" />
-					</div>
-				</div>
-				<div className="carousel-item">
-					<div className="row">
+// 						<img alt="error-loading" src={Images2} className="d-block w-50" alt="error" />
+// 						<img alt="error-loading" src={Images} className="d-block w-50" alt="" />
+// 					</div>
+// 				</div>
+// 				<div className="carousel-item">
+// 					<div className="row">
 
-						<img src="..." className="d-block w-50" alt="error" />
-						<img src="..." className="d-block w-50" alt="error" />
-					</div>
-				</div>
-			</div>
-			<a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-				<span className="carousel-control-prev-icon" aria-hidden="true" />
-				<span className="sr-only">Previous</span>
-			</a>
-			<a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-				<span className="carousel-control-next-icon" aria-hidden="true" />
-				<span className="sr-only">Next</span>
-			</a>
-		</div>
+// 						<img alt="error-loading" src="..." className="d-block w-50" alt="error" />
+// 						<img alt="error-loading" src="..." className="d-block w-50" alt="error" />
+// 					</div>
+// 				</div>
+// 			</div>
+// 			<a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+// 				<span className="carousel-control-prev-icon" aria-hidden="true" />
+// 				<span className="sr-only">Previous</span>
+// 			</a>
+// 			<a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+// 				<span className="carousel-control-next-icon" aria-hidden="true" />
+// 				<span className="sr-only">Next</span>
+// 			</a>
+// 		</div>
 
-	</div>)
-}
+// 	</div>)
+// }
 
 function Main() {
 	return (<div>
@@ -73,7 +73,7 @@ function Main() {
 					<Link className="my-3 button_hover" to="/login/signup">Register Here</Link>
 				</div>
 				<div className="col-lg-6 order-sm-1 order-md-2 d-flex align-items-center" >
-					<img src={web} id="side_img" className="justify-content-center align-items-center img-fluid" width="500" height="500" />
+					<img alt="error-loading" src={web} id="side_img" className="justify-content-center align-items-center img-fluid" width="500" height="500" />
 				</div>
 			</div>
 		</div>
@@ -85,7 +85,7 @@ function Flashes(props) {
 		<div>
 			<div className="mb-3 card" style={{ width: '16rem' }}>
 				<div className="row">
-					<img src={props.img} className="card-img-top" alt="..." />
+					<img alt="error-loading" src={props.img} className="card-img-top" alt="..." />
 					<div className="card-body">
 						<h5 className="card-title">{props.index}.{props.title}</h5>
 						<p className="card-text text-center">{props.description}</p>

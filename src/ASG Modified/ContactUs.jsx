@@ -50,7 +50,7 @@ export default function ContactUs() {
 						<span className="d-flex align-items-center"><i className="fa fa-phone mr-3"></i><h4>Mobile: </h4></span><p className="text_color_according px-5" style={{ textDecoration: "underline" }}>999-999-9999</p>
 					</div>
 					<div className="container col-12 col-md-6 order-md-2 order-1 mt-2">
-						<img src={ContactSVG} className="img-fluid" width="400" height="400" />
+						<img alt="error-loading" src={ContactSVG} className="img-fluid" width="400" height="400" />
 					</div>
 				</div>
 				<br />

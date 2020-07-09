@@ -17,7 +17,7 @@ export default function Courses(params) {
 				{course.map((item, index) =>
 					<div className="card m-5 col-4 col-sm-3 col-md-3" style={{ width: "18rem" }}>
 						<div className="">
-							<img src={item.snippet.thumbnails.medium.url} className="card-img-top img-fluid" alt="..." width="100" />
+							<img alt="error-loading" src={item.snippet.thumbnails.medium.url} className="card-img-top img-fluid" alt="..." width="100" />
 							<div className="card-body">
 								<h5 className="card-title">{index + 1}. Cisco ASA Firewall | Hindi </h5>
 								<p className="card-text">{item.snippet.title}</p>

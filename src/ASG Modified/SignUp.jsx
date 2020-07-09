@@ -56,7 +56,7 @@ function Sign(){
 					</div>
 				</div>
 				<div className="col-12 col-md-6">
-					<img src={SignUpImg} className="img-fluid" />
+					<img alt="error-loading" src={SignUpImg} className="img-fluid" />
 				</div>
 			</div>
 		</div>
